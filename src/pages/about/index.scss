@@ -1,0 +1,8 @@
+@import "../../components/about-me/about-me";
+body {
+    @include bodyFullHeight;
+}
+
+.about-me {
+    flex-grow: 1;
+}

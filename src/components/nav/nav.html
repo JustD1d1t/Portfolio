@@ -1,7 +1,42 @@
-<div class="container">
-  <div class="row justify-content-between py-3">
-    <div class="col-md-2 text-center">Dawid Logo</div>
-    <div class="col-md-6 text-center"><p>Menu</p></div>
-    <div class="col-md-2 text-center">Contact</div>
+<div class="navigation">
+  <div class="container-xl">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <a href="/">
+        <img src="../../resources/images/dslogo.png" alt="logo" width="200" />
+      </a>
+      <ul class="d-none d-lg-flex menu">
+        <li class="menu__item">
+          <a href="/about" class="btn-primary">O mnie</a>
+        </li>
+        <li class="menu__item">
+          <a href="/skills" class="btn-primary">Umiejętności</a>
+        </li>
+        <li class="menu__item">
+          <a href="/projects" class="btn-primary">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="/contact" class="btn-primary">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="d-flex d-lg-none menu--mobile">
+        <li class="menu__item">
+          <a href="/about" class="menu__link">O mnie</a>
+        </li>
+        <li class="menu__item">
+          <a href="/skills" class="menu__link">Umiejętności</a>
+        </li>
+        <li class="menu__item">
+          <a href="/projects" class="menu__link">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="/contact" class="menu__link">Kontakt</a>
+        </li>
+      </ul>
+      <button class="menu__hamburger d-lg-none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </div>

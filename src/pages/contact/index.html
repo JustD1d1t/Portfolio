@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Dawid Starzyk" />
+    <meta name="title" content="Dawid Starzyk" />
+    <meta name="author" content="Dawid Starzyk" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+    <title>Dawid Starzyk | Projekty</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <%= require('../../components/nav/nav.html?raw') %>
+    <div class="container-xl flex-grow-1">
+      <div class="d-flex flex-column h-100">
+        <h1 class="text-center my-4">Kontakt</h1>
+
+        <div class="row justify-content-center">
+          <h2 class="col-12 text-center contact__typewriter" id="typewriter-js"></h2>
+          <div class="col-12 col-lg-6">
+            <form action="" class="contact-form mt-4">
+              <div class="form-floating contact-form__item mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Imię"
+                />
+                <label for="name">* Imię</label>
+                <small class="contact-form__item-error hidden bold emptyField-js">Pole jest wymagane</small>
+                <small class="contact-form__item-error hidden bold incorrectField-js">Wprowadź poprawne imię</small>
+              </div>
+              <div class="form-floating contact-form__item mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  placeholder="Nazwisko"
+                />
+                <label for="surname">* Nazwisko</label>
+                <small class="contact-form__item-error hidden bold emptyField-js">Pole jest wymagane</small>
+                <small class="contact-form__item-error hidden bold incorrectField-js">Wprowadź poprawne nazwisko</small>
+              </div>
+              <div class="form-floating contact-form__item mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email">* E-mail</label>
+                <small class="contact-form__item-error hidden bold emptyField-js">Pole jest wymagane</small>
+                <small class="contact-form__item-error hidden bold incorrectField-js">Wprowadź poprawny mail</small>
+              </div>
+              <div class="form-floating contact-form__item mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Zostaw wiadomość"
+                  id="message"
+                  style="height: 100px"
+                ></textarea>
+                <label for="message">Wiadomość</label>
+              </div>
+              <button class="submitButton-js contact-form__button">
+                Wyślij
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%=require('../../components/footer/footer.html?raw') %>
+  </body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Dawid Starzyk" />
+    <meta name="title" content="Dawid Starzyk" />
+    <meta name="author" content="Dawid Starzyk" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+    <title>Dawid Starzyk | Projekty</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <%= require('../../components/nav/nav.html?raw') %>
+    <div class="container flex-grow-1">
+      <div class="d-flex flex-column">
+        <h1 class="text-center my-4">Projekty</h1>
+        <h2 class="text-center my-3">Prywatne</h2>
+        <div class="row">
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="projects__item-title">Scooters stock</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Moja pierwsza większa aplikacja zbudowana przy użyciu
+                  framework podłączona do backendu (na razie backend wyłączony,
+                  gdyż jest płatny)
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>React</span>,
+                  <span>sass</span>, <span>yup</span>,
+                  <span>jsonwebtoken</span>,
+                  <span>React-transition-group</span
+                  >,<span>React-hook-form</span>, <span>Redux</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://justd1d1t.github.io/ScootersStock-react-mern/#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/web.svg" alt=""></a
+                >
+                <a
+                  href="https://github.com/JustD1d1t/ScootersStock-react-mern"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/code.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Backend Scooters stock</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Moja pierwsza większa aplikacja zbudowana na backend przy
+                  użyciu express.js (na razie backend wyłączony)
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>express.js</span>,
+                  <span>jsonwebtoken</span>, <span>bcrypt</span>,
+                  <span>mongodb</span>, <span>mongoose</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://github.com/JustD1d1t/Scooters-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/code.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Restauracja</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Projekt prostej restauracji w react. Wchodząc na stronę możemy
+                  przeczytać opis restauracji, spojrzeć w menu, obejrzeć
+                  galerię, przeczytać opinie gości czy złożyć nasze zamówienie.
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>react.js</span>,
+                  <span>redux</span>, <span>formik</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://justd1d1t.github.io/Restaurant/#/Restaurant/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/web.svg" alt=""></a
+                >
+                <a
+                  href="https://github.com/JustD1d1t/Restaurant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/code.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Star Wars API</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Projekt napisany w celu powiązania reacta z ogólnodostępnym
+                  API. Wchodząc na stronę mamy opis strony, a następnie możemy
+                  wybrać kategorię z gwiezdnych wojen o której chcemy poczytać.
+                  Po wybraniu odpowiedniej kategorii oraz interesującego nas
+                  elementu przedostastaniemy się na stronę z opisem oraz
+                  powiązanymi elementami.
+                  <br />
+                  <b
+                    >Strona nie jest w pełni dostosowana do urządzęń mobilnych
+                    (do poprawy w wolnym czasie)</b
+                  >
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>react.js</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://justd1d1t.github.io/StarWars-API-react/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/web.svg" alt=""></a
+                >
+                <a
+                  href="https://github.com/JustD1d1t/StarWars-API-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/code.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Zarządzanie listą użytkowników
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Aplikacja stworzona na potrzeby rekrutacji korzystająca z
+                  zewnętrznego API. Możemy dodawać użytkowników, edytować lub
+                  usuwać
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>vue.js</span>,
+                  <span>vuex</span>, <span>vue-router</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://justd1d1t.github.io/trainee-management/#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/web.svg" alt=""></a
+                >
+                <a
+                  href="https://github.com/JustD1d1t/trainee-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/code.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Program do tradingu w serwisie binance
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Program zainspirowany doświadczeniem z tradingu. Zbudowany
+                  został przy użyciu biblioteki Electron. Program co minutę
+                  sprawdza ceny na wszystkich parach dostępnych na kontraktach
+                  oraz porównuje ze starą ceną. Gdy cena przekroczy ustalony
+                  przez nas procent to rozgrywa pozycję w danym kierunku oraz
+                  zamyka z odpowiednim zyskiem lub stratą
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to:
+                  <span>axios</span
+                  >,<span>binance</span>,<span>crypto</span>,<span>node-binance-api</span>,<span
+                    >node-notifier</span
+                  >
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link: <b>Do ewentualnego wglądu dla rekruterów</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Backend programu do tradingu</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Aplikacja backendowa gdzie trzymam logikę dotyczącą otwierania
+                  pozycji, weryfikacji użytkowników oraz wysyłania powiadomień
+                  na discord, telegram oraz mailowo. Co minutę sprawdzamy ceny,
+                  a następnie odsyłamy ja do aplikacji, która w zależności od
+                  konfiguracji użytkownika przesyła nam informacje o parametrach
+                  do otworzenia danej pozycji
+                </p>
+                <p class="projects__item-stack">
+                  Rzeczy jakie wykorzystałem to: <span>express.js</span>,
+                  <span>mongoDB</span>, <span>mongoose</span>,
+                  <span>bcrypt</span>,
+                  <span>crypto</span>,<span>discord.js</span>,
+                  <span>jsonwebtoken</span>, <span>node-telegram-bot-api</span>,
+                  <span>nodemailer</span>
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link: <b>Do ewentualnego wglądu dla rekruterów</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Strona o programie do tradingu
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">In progress</p>
+              </div>
+              <div class="projects__item-links">Link: <b>in progress</b></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center my-3">Komercyjne</h2>
+        <p>
+          Projekty te wykorzystują <b>handlerbars</b>, <b>jQuery</b>,
+          <b>scss</b> oraz zewnętrzne biblioteki typu <b>swiper</b> czy
+          <b>amchart</b>. Projekty te odwzorowywałem z figmy, a pobieranie
+          danych z backendu odbywało się przy pomocy helperów napisanych do
+          handlebars. Projekty te powstawały od 0 do końca przeze mnie
+        </p>
+        <div class="row">
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Biuro prasowe dekoral</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Pierwszy komercyjny projekt biura prasowego dla firmy Dekoral
+                  napisany od 0 po zaledwie 3 miesiącach pracy.
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://www.media.dekoral.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/press.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Biuro prasowe / relacje inwestorskie Amica
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Biuro prasowe dla firmy amica wraz ze stroną reliacji
+                  inwestorskich
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://www.press.amica.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/press.svg" alt=""></a
+                >
+                <a
+                  href="https://www.ir.amica.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/chart.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Biuro prasowe / relacje inwestorskie banku pocztowego
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Biuro prasowe dla banku pocztowego wraz ze stroną reliacji
+                  inwestorskich
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://www.media.pocztowy.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/press.svg" alt=""></a
+                >
+                <a
+                  href="https://ir.pocztowy.pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/chart.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Biuro prasowe dla banku BGK</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Biuro prasowe dla banku BGK
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://www.idea3w.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/press.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>          
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">Biuro prasowe dla Vastint</h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Biuro prasowe dla Vastint
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://news.poland.vastint.eu/""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="../../resources/svg/press.svg" alt=""></a
+                >
+              </div>
+            </div>
+          </div>          
+          <div class="col-12 col-lg-4 my-3">
+            <div class="projects__item">
+              <h3 class="project__item-title">
+                Strona help center dla firmy netPR.pl
+              </h3>
+              <div class="mb-4">
+                <p class="projects__item-description mb-3">
+                  Strona help center dla firmy netPR.pl w której pracuję na
+                  której możemy znaleźć informacje dotyczącego nurtującego nas
+                  problemu oraz pomoce jak rozwiązać dany problem
+                </p>
+              </div>
+              <div class="projects__item-links">
+                Link:
+                <a
+                  href="https://www.helpcenter.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Help center</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%=require('../../components/footer/footer.html?raw') %>
+  </body>
+</html>

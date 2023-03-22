@@ -2,11 +2,35 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: ["./src/pages/index/index.js", "./src/pages/index/index.scss"],
-    kiwi: ["./src/pages/kiwi/kiwi.js", "./src/pages/kiwi/index2.scss"],
+    index: [
+      "./src/pages/index/index.js",
+      "./src/pages/index/index.scss",
+      "./src/components/nav/index.js",
+    ],
+    about: [
+      "./src/pages/about/index.js",
+      "./src/pages/about/index.scss",
+      "./src/components/nav/index.js",
+    ],
+    skills: [
+      "./src/pages/skills/index.js",
+      "./src/pages/skills/index.scss",
+      "./src/components/nav/index.js",
+    ],
+    projects: [
+      "./src/pages/projects/index.js",
+      "./src/pages/projects/index.scss",
+      "./src/components/nav/index.js",
+    ],
+    contact: [
+      "./src/pages/contact/index.js",
+      "./src/pages/contact/index.scss",
+      "./src/components/nav/index.js",
+    ],
   },
   output: {
     filename: "[name]/index.js",
@@ -39,6 +63,9 @@ module.exports = {
             maxSize: 3 * 1024,
           },
         },
+        generator: {
+          filename: "resources/svg/[name][ext]",
+        },
       },
       {
         test: /\.(png|jpg)$/,
@@ -47,6 +74,9 @@ module.exports = {
           dataUrlCondition: {
             maxSize: 3 * 1024,
           },
+        },
+        generator: {
+          filename: "resources/images/[name][ext]",
         },
       },
       {
@@ -67,7 +97,7 @@ module.exports = {
             loader: "sass-loader",
             options: {
               additionalData:
-                '@import "bootstrap"; @import "./src/styles/_main.scss"; @import "./src/styles/_override-bootstrap.scss"; @import "./src/styles/_variables.scss"; @import "./src/components/footer/_footer.scss"; @import "./src/components/nav/nav.scss";',
+                '@import "bootstrap"; @import "./src/styles/_mixins.scss"; @import "./src/styles/_main-classes.scss"; @import "./src/styles/_variables.scss"; @import "./src/styles/_main.scss"; @import "./src/styles/_override-bootstrap.scss"; @import "./src/components/footer/_footer.scss"; @import "./src/components/nav/nav.scss";',
             },
           },
         ],
@@ -93,6 +123,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name]/index.css",
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "src/resources", to: "resources" }],
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/pages/index/index.html",
@@ -101,9 +134,27 @@ module.exports = {
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/kiwi/index.html",
-      filename: "kiwi/index.html",
-      chunks: ["kiwi"],
+      template: "./src/pages/about/index.html",
+      filename: "about/index.html",
+      chunks: ["about"],
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/skills/index.html",
+      filename: "skills/index.html",
+      chunks: ["skills"],
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/projects/index.html",
+      filename: "projects/index.html",
+      chunks: ["projects"],
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/contact/index.html",
+      filename: "contact/index.html",
+      chunks: ["contact"],
       inject: true,
     }),
   ],

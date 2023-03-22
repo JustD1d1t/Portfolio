@@ -1,0 +1,44 @@
+.introduce {
+  padding: 2rem 0;
+  flex-grow: 1;
+
+  &__intro {
+    height: 150px;
+  }
+
+  svg {
+    @include media-breakpoint-up(md) {
+      height: 500px;
+    }
+  }
+
+  #person {
+    animation: moving 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #codelines {
+    animation: trans 1s ease-in-out 5 alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes moving {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(20px, 0);
+    }
+  }
+
+  @keyframes trans {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}

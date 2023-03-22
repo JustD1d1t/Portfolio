@@ -17,6 +17,7 @@
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.3",
@@ -34,6 +35,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "swiper": "^9.1.0",
+    "typewriter-effect": "^2.19.0"
   }
 }
