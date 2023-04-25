@@ -35,7 +35,7 @@ module.exports = {
   output: {
     filename: "[name]/index.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "",
+    publicPath: "auto",
   },
   mode: "development",
   devServer: {

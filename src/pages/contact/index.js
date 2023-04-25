@@ -73,18 +73,26 @@ const sendForm = async (e) => {
   if (isAnyEmptyField || isAnyIncorrectField) {
     return;
   }
-  const res = await fetch("http://localhost:4000/portfolio/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      name: nameInput.value,
-      surname: surnameInput.value,
-      email: emailInput.value,
-      message: messageTextarea.value,
-    }),
-  });
+  const res = await fetch(
+    "https://binance-backend.herokuapp.com/portfolio/contact",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: nameInput.value,
+        surname: surnameInput.value,
+        email: emailInput.value,
+        message: messageTextarea.value,
+      }),
+    }
+  );
+  const data = await res.json();
+  if (data.message === "send") {
+    document.querySelector(".contact-form").classList.add("hidden");
+    document.querySelector(".contact__thank-you-text").classList.add("active");
+  }
 };
 
 submitButton.addEventListener("click", sendForm);

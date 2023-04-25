@@ -50,5 +50,16 @@ body {
         display: none;
       }
     }
+    &.hidden {
+      display: none;
+    }
+  }
+  &__thank-you-text {
+    display: none;
+    text-align: center;
+    margin-top: 48px;
+    &.active {
+      display: block;
+    }
   }
 }
